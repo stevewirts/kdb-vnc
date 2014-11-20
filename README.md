@@ -9,20 +9,19 @@ install the [free version of Q](http://kx.com/software-download.php) from kx sys
 install [RealVNC](http://www.realvnc.com/download/viewer/) client for your platform
 
 
-unzip these contents into a directory
-~/vnc 
-	or
-c:\vnc is good
+unzip these contents into a directory<br>
+~/vnc<br> 
+	or<br>
+c:\vnc is good<br>
+<br>
+on windows<br>
+run <br>
+kdbvnc.bat<br>
 
-on windows
-run 
-kdbvnc.bat
-
-on linux/OSX
-q vnc.q -p 5001
-java -classpath vnc.jar vnc.KDBVNC
-
-run the vnc client, setting the server 
-value to "localhost"
+on linux/OSX<br>
+q vnc.q -p 5001<br>
+java -classpath vnc.jar vnc.KDBVNC<br>
+<br>
+run the vnc client, setting the server value to "localhost"
 
 ![on a mac](qvnc-screenshot.png)
