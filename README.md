@@ -12,13 +12,12 @@ install [RealVNC](http://www.realvnc.com/download/viewer/) client for your platf
 unzip these contents into a directory<br>
 ~/vnc<br> 
 	or<br>
-c:\vnc is good<br>
+c:\vnc<br>
 <br>
-on windows<br>
-run <br>
+on windows run <br>
 kdbvnc.bat<br>
 
-on linux/OSX<br>
+on linux/OSX start both these<br>
 q vnc.q -p 5001<br>
 java -classpath vnc.jar vnc.KDBVNC<br>
 <br>
