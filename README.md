@@ -1,6 +1,6 @@
 Q VNC server
 
-This is a [Q](http://www.kx.com) implementation of a minimal vnc server.  It uses a thin java gateway to "peel" the q headers on/off of the socket connection bewteen q and the vnc client.  Absolutely all rendering happens in Q including masking of fonts and drawing the pointer.  Pieces of images are proxied through to the vnc client while events from the client are sent to and handled by Q.  The screenshot below shows a window of of table control looking at the Q defacto trade table example random data.  To build much of the gui code rendering structure a simple object system was devised (see o.q).  
+This is a [Q](http://www.kx.com) implementation of a minimal vnc server.  It uses a thin java gateway to "peel" the q headers on/off of the socket connection bewteen q and the vnc client.  Absolutely all rendering happens in Q including masking of fonts and drawing the pointer.  Pieces of images are proxied through to the vnc client while events from the client are sent to and handled by Q.  The screenshot below shows a window holding a table control looking at the Q defacto trade table example random data.  To build much of the gui code rendering structure a simple object system was devised (see o.q).  
 
 to try it out
 
