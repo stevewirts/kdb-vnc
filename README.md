@@ -4,13 +4,15 @@ This is a [Q](http://www.kx.com) implementation of a vnc server.  It uses a thin
 
 to try it out
 
+install the [free version of Q](http://kx.com/software-download.php) from kx systems
+
+install [RealVNC](http://www.realvnc.com/download/viewer/) client for your platform
+
+
 unzip these contents into a directory
 ~/vnc 
 	or
 c:\vnc is good
-
-install RealVNC client for your platform
-http://www.realvnc.com/download/viewer/
 
 on windows
 run 
