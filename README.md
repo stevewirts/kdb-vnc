@@ -14,13 +14,14 @@ unzip these contents into a directory
 	or
 c:\vnc is good
 
-on windows
-run 
-kdbvnc.bat
+on windows run 
+
+	kdbvnc.bat
 
 on linux/OSX
-q vnc.q -p 5001
-java -classpath vnc.jar vnc.KDBVNC
+
+	q vnc.q -p 5001
+	java -classpath vnc.jar vnc.KDBVNC
 
 run the vnc client, setting the server 
 value to "localhost"
