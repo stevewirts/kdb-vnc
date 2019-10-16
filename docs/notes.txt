@@ -1,0 +1,75 @@
+yet another talk about an unusual usage of kdb :)
+
+buried in various libraries for rendering UI
+    I had a lot of exposure to OO ways of doing UI
+
+visual works visual smalltalk 
+    explains alot of my early style
+    earliest form of 2 way binding
+        value models
+    1993
+    gui and the data are 1
+        value model/domain adaption
+        <visualworks book picture>
+
+active in the opensource pharo smalltalk community 
+    years?
+    I built the windows 2000 lnf
+    find pharo code? screenshots of windows lnf
+
+for Unilever in Leeds/UK
+    years?
+    ported visualworks smalltalk 2 waybinding arch on top of swing 
+
+at IBM
+    years?
+    built a library at IBM for lightweight controls to replace AWT components
+
+spoke at oopsla
+    how to use valuemodels with visualage for java
+article in java one
+    visualage for java
+
+consultant at allaire to develop courseware for their jsp engine
+    patent
+        https://patents.google.com/patent/US7076766B2/en
+        applied 2000 - finished 2002
+    webtier was born
+
+2000
+at hedge fund
+    building lots of 
+        jsp/webtier based applications
+        4 versions of a firmwide general pnl system
+        early spa using some innovative tricks
+
+2002
+Ed Bierly said make something radically different
+
+    QSP engine, dynamic server side q version of jsp engine
+        sessions
+        different variable scoping
+        custom tags
+        precompiled the pages
+
+2004ish?
+    how about we do everything in kdb? even the rendering?
+    squeak smalltalk had a vnc server package that worked reasonably well,
+    do this for kdb
+
+my experience was with OO languages and libraries
+    before I built the rfb/vnc server I needed
+        OO system for the widgetry - o.q 
+        lib for rendering - graphics.q
+            graphics primitives
+            simple geometry  
+            font rendering support
+        simple windowing system
+
+SHOW DEMO and CODE HERE
+
+lessons learned
+    maybe too much low level stuff done in q?
+    use cairo and a real vnc server implementation
+    john d'ausilio had been working on this    
+        

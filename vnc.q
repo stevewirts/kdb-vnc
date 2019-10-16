@@ -62,7 +62,7 @@ sho:{[aTable]
 
   // the last layer IS the cursor arrow
   .vnc.layer.pointer::(0 0 12 21;0x03000000000000000000000003030000000000000000000003fd0300000000000000000003fdfd03000000000000000003fdfdfd030000000000000003fdfdfdfd0300000000000003fdfdfdfdfd03000000000003fdfdfdfdfdfd030000000003fdfdfdfdfdfdfd0300000003fdfdfdfdfdfdfdfd03000003fdfdfdfdfdfdfdfdfd030003fdfdfdfdfdfd030303030303fdfdfd03fdfd030000000003fdfd0303fdfd030000000003fd03000003fdfd03000000030300000003fdfd0300000003000000000003fdfd03000000000000000003fdfd0300000000000000000003fdfd03000000000000000003fdfd0300000000000000000003030000);
-  //.vnc.layer.taskBar:((0;(-30 + .vnc.bounds 3);(.vnc.bounds 2);30);((.vnc.bounds 2)#.vnc.colors[`White][0]),(29*.vnc.bounds 2)#.vnc.colors[`Gray20Percent][0]);
+  //.vnc.layer.taskBar::((0;(-30 + .vnc.bounds 3);(.vnc.bounds 2);30);((.vnc.bounds 2)#.vnc.colors[`White][0]),(29*.vnc.bounds 2)#.vnc.colors[`Gray20Percent][0]);
 
   .vnc.layers::();
   screen::.o.new`Screen;
@@ -905,7 +905,9 @@ trade:([]
   aMessage:.vnc.generateUpdateMessage[enlist .vnc.bounds];
   -1 string .vnc.bounds;
   .vnc.recordHandle[];
-  .z.w aMessage;
+  // .z.w aMessage;
+  // refresh[];
+  .vnc.addToDamageRegions[.vnc.bounds];
   aMessage};
 
 .vnc.recordHandle:{
@@ -981,9 +983,7 @@ popClock:{
   }
 
 
-
 .vnc.init[];
-
 
 
 
