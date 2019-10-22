@@ -66,6 +66,25 @@ my experience was with OO languages and libraries
             font rendering support
         simple windowing system
 
+o.q 
+
+fonts.q 
+
+graphics.q 
+
+merge.q 
+
+rect.q 
+
+vnc_colors.q 
+
+vnc_events.q 
+
+vnc_utils.q 
+
+vnc.q 
+
+
 SHOW DEMO and CODE HERE
 
 lessons learned
