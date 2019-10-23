@@ -1,5 +1,10 @@
 yet another talk about an unusual usage of kdb :)
 
+the talk is about the creation of a vnc/rfb implementation in Q 
+
+    https://www.hep.phy.cam.ac.uk/vnc_docs/rfbproto.pdf
+    first a bit about my history with UI and kdb
+
 buried in various libraries for rendering UI
     I had a lot of exposure to OO ways of doing UI
 
@@ -66,29 +71,77 @@ my experience was with OO languages and libraries
             font rendering support
         simple windowing system
 
-o.q 
 
-fonts.q 
+about the code
 
-graphics.q 
+o.q
+    OO was how I knew how to build view components
+        didn't know what I would need
+    simple object system
+    supports
+        inheritance
+        inst vars 
+        methods
+    could replace it now with a vector based solution
 
-merge.q 
+fonts.q
+    need to render text onto a bitmap
+    created an ascii character matrix against a bitmap 
+    computed width/height from bitmap,
+    chopped up the provided image
+
+graphics.q
+    simple drawing function to render into a 2d array
+    implementations of
+        draw3DRect
+        drawArc
+        drawChar
+        drawCircle
+        drawHorizontalArc
+        drawHorizontalOval
+        drawImage
+        drawLine
+        drawOval
+        drawPolygon
+        drawPolyline
+        drawRect
+        drawString
+        drawVerticalArc
+        drawVerticalOval
 
 rect.q 
+    array of 4 ints
+    implementations of
+            area
+            centered
+            contains
+            indexes
+            intersect
+            intersects
+            toString
+            union
 
-vnc_colors.q 
+vnc_colors.q
+    simple map of colors 
+    alias to byte value
 
 vnc_events.q 
-
-vnc_utils.q 
+    handles the events coming from the vnc client
 
 vnc.q 
-
+    implementation the protocol using the above mentioned q files
+    https://www.hep.phy.cam.ac.uk/vnc_docs/rfbproto.pdf
 
 SHOW DEMO and CODE HERE
 
 lessons learned
+    modernize things
+        get rid of the object system
+        vectorize everything
+        revisit performance
+
     maybe too much low level stuff done in q?
-    use cairo and a real vnc server implementation
-    john d'ausilio had been working on this    
+        use cairo and a real vnc server implementation
+        john d'ausilio had been working on this    
         
+

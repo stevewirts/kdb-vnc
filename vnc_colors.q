@@ -1,6 +1,6 @@
 .vnc.transparentColor:0x00;
 
-//see http://www.csd.uwo.ca/staff/magi/doc/vnc/rfbproto.pdf
+//see https://www.hep.phy.cam.ac.uk/vnc_docs/rfbproto.pdf
 // section 5.3.2 for a description to understand this map
 
 .vnc.colors:();

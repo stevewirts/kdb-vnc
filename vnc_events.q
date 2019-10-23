@@ -1,3 +1,7 @@
+// this file provides the handling of events
+// that are sent from the vnc client
+//see https://www.hep.phy.cam.ac.uk/vnc_docs/rfbproto.pdf
+
 .event.toString:{[anEvent] aString: raze "anEvent(",(string anEvent `type),", ",(string anEvent `button),", ",(.point.toString[anEvent `location]),", ",(string anEvent `time),")";aString};
 
 .vnc.events.handleEvent:{[x]

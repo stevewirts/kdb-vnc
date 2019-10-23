@@ -1,3 +1,7 @@
+// this is the main entry point for Q implementation of
+// a vnc server according to the following specification
+// https://www.hep.phy.cam.ac.uk/vnc_docs/rfbproto.pdf
+
 //q vnc.q -p 5001
 
 \l o.q
